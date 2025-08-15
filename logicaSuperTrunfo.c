@@ -27,6 +27,9 @@ int main() {
     float densidade2 = populacao2 / area2;
     float perCapita2 = prod2 / populacao2;
 
+    //Média de praias
+    float num1, num2, media;
+
     //Jogo
 
     int opcao;
@@ -36,7 +39,7 @@ int main() {
     
     printf("Menu Principal\n");
         printf("1. Comparar PIB e Densidade de Cartas das Cartas\n");
-        printf("2. Ver regras\n");
+        printf("2. Ver média de número de praias entre os dois estados\n");
         printf("3. Sair da aplicação\n");
         scanf("%d", &opcao);
     
@@ -64,7 +67,14 @@ int main() {
                     }
                 break;
             case 2:
-                printf("Na comparação a carta com maior PIB vence e a carta com menor Densidade vence\n");
+                printf("Número de praias da cidade 1:\n");
+                scanf("%f", &num1);
+                printf("Número de praias da cidade 2:\n");
+                scanf("%f", &num2);
+
+                //Calculo da média
+                media = (num1 + num2) / 2;
+                printf("A média do estudante é: %.2f\n", media);
                 break;
             case 3:
                 printf("Saindo da aplicação\n");
